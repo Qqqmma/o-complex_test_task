@@ -14,9 +14,9 @@
 - Данные о погоде: https://open-meteo.com/
 
 ## Развертывание прокта
-`git clone ...`
+`git clone https://github.com/Qqqmma/o-complex_test_task.git`
 
-`cd ...`
+`cd https://github.com/Qqqmma/o-complex_test_task.git`
 
 `docker-compose up -d --build`
 
