@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+
+<form id="myForm">
+  <div class="autocomplete input-group mb-3">
+    <input 
+      type="text" 
+      name="city" 
+      id="city-input"
+      class="form-control"
+      placeholder="Введите город"
+    />
+    <button id="submit" class="btn btn-outline-secondary">Показать погоду</button>
+    <div id="autocomplete-results" class="autocomplete-results"></div>
+  </div>
+</form>
+
+<div class="row">
+  <div id="weather-block" class="col">
+    <h2 id="city-title"></h2>
+    <table class="table" id="weathe-table">
+    </table>
+  </div>
+  <div class="col-4" id="history">
+    {% if history %}
+      <h2>История поиска</h2>
+      {% for item in history %}
+      <p>{{ item }}</p>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
