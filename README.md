@@ -16,7 +16,7 @@
 ## Развертывание прокта
 `git clone https://github.com/Qqqmma/o-complex_test_task.git`
 
-`cd https://github.com/Qqqmma/o-complex_test_task.git`
+`cd o-complex_test_task`
 
 `docker-compose up -d --build`
 
